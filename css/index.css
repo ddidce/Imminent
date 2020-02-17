@@ -1,0 +1,123 @@
+@import "reset.css";
+@import "tabMenu.css";
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Gothic+A1:300,400,500,600,700,800&display=swap");
+
+body {
+    background: #121212;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 4.3rem 0 0;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* -webkit-transform: translateX(-50%); */
+    transform: translateX(-50%);
+}
+
+header h1 {
+    font-size: 52px;
+    line-height: 1.385;
+    margin-bottom: 2.4rem;
+    color: #ffffff;
+}
+
+header h1 span {
+    /* display: inline; */
+    color: #8dc63f;
+}
+
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+}
+
+
+p.lead {
+    box-sizing: border-box;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.8;
+    /* margin-bottom: 3.6rem;` */
+    margin: 0 auto;
+    color: #646464;
+    width: 880px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.bloack-tab-full {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+
+}
+
+.column-entry {
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.column-entry a {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.column-entry:hover a {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.column-entry:hover img {
+    transition: all 0.3s;
+    opacity: 0.4;
+}
+
+.column-entry:hover img::after {
+    content: "...";
+    font-family: georgia, serif;
+    font-size: 2.7rem;
+    z-index: 1;
+    display: block;
+    height: 30px;
+    width: 30px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    margin-left: -15px;
+    margin-top: -30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all .3s;
+}
+
+.entry__title {
+
+    color: #ffffff;
+    text-align: center;
+    padding-top: 28px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
