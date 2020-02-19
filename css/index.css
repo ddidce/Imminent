@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "tabMenu.css";
+@import "static.css";
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Display:400,400i|Gothic+A1:300,400,500,600,700,800&display=swap");
 
 body {
@@ -25,7 +26,6 @@ header::after {
     position: absolute;
     bottom: 0;
     left: 50%;
-    /* -webkit-transform: translateX(-50%); */
     transform: translateX(-50%);
 }
 
@@ -37,7 +37,6 @@ header h1 {
 }
 
 header h1 span {
-    /* display: inline; */
     color: #8dc63f;
 }
 
@@ -54,7 +53,6 @@ p.lead {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.8;
-    /* margin-bottom: 3.6rem;` */
     margin: 0 auto;
     color: #646464;
     width: 880px;
@@ -71,6 +69,7 @@ p.lead {
 }
 
 .column-entry {
+    position: relative;
     padding: 0 15px;
     cursor: pointer;
 }
@@ -86,30 +85,22 @@ p.lead {
 }
 
 .column-entry:hover img {
-    transition: all 0.3s;
-    opacity: 0.4;
+    transition: all 0.2s linear;
+    opacity: 0.2;
 }
 
-.column-entry:hover img::after {
-    content: "...";
-    font-family: georgia, serif;
-    font-size: 2.7rem;
-    z-index: 1;
+.column-entry>i {
+    display: none;
+}
+
+.column-entry:hover i {
     display: block;
-    height: 30px;
-    width: 30px;
-    letter-spacing: -1px;
-    line-height: 30px;
-    margin-left: -15px;
-    margin-top: -30px;
     position: absolute;
+    color: white;
     left: 50%;
-    top: 50%;
-    text-align: center;
-    color: #ffffff;
-    opacity: 0;
-    transform: scale(0.5);
-    transition: all .3s;
+    top: 35%;
+    transform: translateX(-50%);
+    transition: all .2s linear;
 }
 
 .entry__title {

@@ -1,0 +1,127 @@
+/* .s-header {
+    position: relative;
+}
+
+.header-logo>a>img {
+    position: absolute;
+    right: 0;
+    width: 140px;
+    height: 23px;
+}
+
+.header-email {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color;
+
+    display: flex;
+}
+
+.header-email i {
+    color: #8dc63f;
+    padding-right: 8px;
+}
+
+.header-email span div {
+    position: relative;
+    width: 0px;
+    height: 1px;
+    background: #8dc63f;
+    transition: width 0.3s;
+}
+
+.header-email:hover span>div {
+    width: 139px;
+} */
+
+.intro-static {
+    /* position: relative; */
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/bg-static.jpg);
+    width: 100%;
+    /* max-width: 100%;
+    height: 100%;
+    */
+    z-index: -50;
+    /* display: block; */
+}
+
+.intro-content {
+    margin: 0 251px 250px;
+    padding: 240px 0;
+}
+
+@keyframes ani {
+    from {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.intro-content__text {
+    position: relative;
+    animation: ani 1s ease-in-out;
+}
+
+.intro-content__text h3::before {
+    content: "";
+    display: block;
+    width: 73px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 3px;
+    right: calc(100% + 2.8rem);
+    text-align: center;
+}
+
+.intro-content__text h3 {
+    position: relative;
+    display: inline-block;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8dc63f;
+    letter-spacing: 0.8px;
+}
+
+.intro-content__text h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin: 0;
+}
+
+.intro-content h1,
+.intro-content__notify,
+.counter__time .time {
+    color: white;
+}
+
+.intro-content__counter-wrap h4,
+.time_eng {
+    color: #7f8c8d;
+    font-weight: 500;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.intro-content-bottom {
+    /* position: relative; */
+    border: 1px solid red;
+    /* margin: 0 250px; */
+    margin-top: 90px;
+}
+
+.intro-content-bottom .counter__time {
+    /* position: absolute; */
+    display: inline-block;
+
+}
