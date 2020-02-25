@@ -3,11 +3,6 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* padding-bottom: 80px; */
-}
-
-main {
-  padding-bottom: 80px;
 }
 
 .intro-static {
@@ -29,7 +24,6 @@ main {
 
 .header-logo>a>img {
   position: absolute;
-  /* right: 0; */
   width: 140px;
   height: 23px;
   right: 74px;
@@ -145,20 +139,13 @@ main {
 }
 
 .intro-content-bottom {
-  /* position: relative; */
-  /* border: 1px solid red; */
-  /* margin: 0 250px; */
   position: relative;
   margin-top: 0;
   display: flex;
   animation: silde-up 2.5s ease-in-out;
 }
 
-.intro-content-bottom .counter__time
-
-/* .intro-content-bottom .intro-content__notify */
-  {
-  /* position: absolute; */
+.intro-content-bottom .counter__time {
   display: inline-block;
   position: relative;
 }
@@ -180,7 +167,6 @@ main {
   text-align: center;
   color: #ffffff;
   padding: 0 32px;
-  /*     display: block; */
 }
 
 .intro-content__notify>a {
