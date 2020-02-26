@@ -206,3 +206,36 @@ html {
   width: 100%;
   z-index: -1;
 }
+
+
+
+/* Services */
+
+body {
+  counter-reset: section;
+}
+
+.serivces-list h4::before {
+  display: block;
+  margin-bottom: 30px;
+  color: #8dc63f;
+  font-size: 30px;
+  counter-increment: section;
+  content: counter(section, decimal-leading-zero) ". ";
+}
+
+.serivces-list {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: inherit;
+
+}
+
+.serivces-list p {
+  max-width: 375px;
+}
+
+.services-list__item {
+  padding: 0 15px;
+  margin-bottom: 24px;
+}

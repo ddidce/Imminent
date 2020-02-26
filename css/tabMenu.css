@@ -138,6 +138,10 @@ input:checked+label {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.s-copyright>span>a {
+    color: #8dc63f;
+}
+
 
 .btn-content {
     display: inline-block;
