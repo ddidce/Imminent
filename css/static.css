@@ -158,7 +158,7 @@ html {
 
 .intro-content__notify {
   position: absolute;
-  right: 51%;
+  right: 25%;
   top: 60px;
   letter-spacing: -1px;
   width: 300px;
@@ -238,4 +238,73 @@ body {
 .services-list__item {
   padding: 0 15px;
   margin-bottom: 24px;
+}
+
+/* Contact */
+
+.latge-six {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+}
+
+.latge-six>h4 {
+  font-size: 21px;
+  margin-top: 0px;
+}
+
+.latge-six .link-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.latge-six .link-list li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.latge-six .link-list li a:hover {
+  color: #8dc63f;
+  transition: all 0.1s ease-in;
+}
+
+.column .tab-content__item-bottom {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+.column .tab-content__item-bottom a {
+  text-decoration: none;
+  color: #8dc63f;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 10px;
+}
+
+.column .tab-content__item-bottom a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact-number a {
+  margin-top: -10px;
+  font-size: 20px;
+  line-height: -2px;
+  font-weight: 600;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.contact-number a:hover {
+  color: #8dc63f;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-number a:first-child::after {
+  content: "/";
+  font-weight: 400;
+  margin: 0 .6rem 0 1rem;
+  color: #646464;
 }
