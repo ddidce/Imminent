@@ -1,0 +1,340 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(../images/slides/slide-01.jpg);
+        transition: all 5s ease-in-out;
+        animation-delay: 4s;
+    }
+
+    25% {
+        background-image: url(../images/slides/slide-02.jpg);
+        transition: all 5s ease-in-out;
+        animation-delay: 2s;
+    }
+
+    75% {
+        background-image: url(../images/slides/slide-03.jpg);
+        transition: all 3s step-end;
+        animation-delay: 4s;
+    }
+
+    100% {
+        background-image: url(../images/slides/slide-01.jpg);
+        transition: all 3s step-end;
+        animation-delay: 4s;
+    }
+}
+
+
+.intro-static {
+    width: 100%;
+    min-height: 100%;
+    background: no-repeat;
+    background-size: cover;
+    animation: slide 8s infinite;
+    transition: opacity 3000ms ease 0s;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    border: 0;
+    padding: 0;
+    background-position: center;
+}
+
+
+
+.s-header {
+    position: relative;
+}
+
+.header-logo>a>img {
+    position: absolute;
+    width: 140px;
+    height: 23px;
+    right: 74px;
+    top: 63px;
+}
+
+.header-email {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color;
+    display: flex;
+    top: 65px;
+    left: 79px;
+}
+
+.header-email i {
+    color: #8dc63f;
+    padding-right: 8px;
+}
+
+.header-email span div {
+    position: relative;
+    width: 0px;
+    height: 1px;
+    background: #8dc63f;
+    transition: width 0.3s;
+}
+
+.header-email:hover span>div {
+    width: 139px;
+}
+
+.intro-content {
+    margin: 0 251px 0;
+    padding: 240px 0 113px;
+}
+
+@keyframes ani {
+    from {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.intro-content__text {
+    top: -40px;
+    position: relative;
+    animation: ani 1s ease-in-out;
+}
+
+.intro-content__text h3::before {
+    content: "";
+    display: block;
+    width: 73px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 3px;
+    right: calc(100% + 2.8rem);
+    text-align: center;
+}
+
+.intro-content__text h3 {
+    position: relative;
+    display: inline-block;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8dc63f;
+    letter-spacing: 0.8px;
+}
+
+.intro-content__text h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin: 0;
+}
+
+.intro-content h1,
+.intro-content__notify,
+.counter__time .time {
+    color: white;
+}
+
+.intro-content__counter-wrap h4,
+.time_eng {
+    color: #7f8c8d;
+    font-weight: 500;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.intro-content__counter-wrap {
+    margin-right: 80px;
+}
+
+@keyframes silde-up {
+    from {
+        transform: translateY(80%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.intro-content-bottom {
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    animation: silde-up 2.5s ease-in-out;
+}
+
+.intro-content-bottom .counter__time {
+    display: inline-block;
+    position: relative;
+}
+
+.time {
+    font-weight: 600;
+    font-size: 32px;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.intro-content__notify {
+    position: absolute;
+    right: 25%;
+    top: 60px;
+    letter-spacing: -1px;
+    width: 300px;
+    margin: 0 auto;
+    background: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 32px;
+}
+
+.intro-content__notify>a {
+    border: 1px solid #ffffff;
+    padding: 20px 32px;
+    width: 200px;
+    height: 56px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.intro-content__notify>a:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+    background: #ffffff;
+}
+
+.intro-content__notify>a:hover {
+    color: #333;
+}
+
+.intro-content__notify>a:hover:after {
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+/* Services */
+
+body {
+    counter-reset: section;
+}
+
+.serivces-list h4::before {
+    display: block;
+    margin-bottom: 30px;
+    color: #8dc63f;
+    font-size: 30px;
+    counter-increment: section;
+    content: counter(section, decimal-leading-zero) ". ";
+}
+
+.serivces-list {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: inherit;
+
+}
+
+.serivces-list p {
+    max-width: 375px;
+}
+
+.services-list__item {
+    padding: 0 15px;
+    margin-bottom: 24px;
+}
+
+/* Contact */
+
+.latge-six {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+}
+
+.latge-six>h4 {
+    font-size: 21px;
+    margin-top: 0px;
+}
+
+.latge-six .link-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.latge-six .link-list li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.latge-six .link-list li a:hover {
+    color: #8dc63f;
+    transition: all 0.1s ease-in;
+}
+
+.column .tab-content__item-bottom {
+    font-size: 56px;
+    margin-bottom: 40px;
+}
+
+.column .tab-content__item-bottom a {
+    text-decoration: none;
+    color: #8dc63f;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+}
+
+.column .tab-content__item-bottom a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.contact-number a {
+    margin-top: -10px;
+    font-size: 20px;
+    line-height: -2px;
+    font-weight: 600;
+    font-family: "Gothic A1", sans-serif;
+}
+
+.contact-number a:hover {
+    color: #8dc63f;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-number a:first-child::after {
+    content: "/";
+    font-weight: 400;
+    margin: 0 .6rem 0 1rem;
+    color: #646464;
+}

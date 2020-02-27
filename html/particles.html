@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imminent - Particles</title>
+    <title>Imminent - Static</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Gothic+A1:400,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/particles.css">
     <link rel="stylesheet" href="../css/tabMenu.css">
 </head>
 
@@ -18,8 +21,12 @@
                 <img src="../images/logo.png" alt="" style="background-color: black">
             </a>
             <div class="header-email">
-                <i class="far fa-paper-plane"></i>
-                <span>ddidce@gmail.com</span>
+                <div>
+                    <i class="far fa-paper-plane"></i>
+                </div>
+                <span>ddidce@gmail.com
+                    <div></div>
+                </span>
             </div>
         </div>
     </header>
@@ -28,7 +35,7 @@
         <section class="intro-static">
             <div class="intro-content">
                 <div class="column">
-                    <div class="intro-content__text">
+                    <div class="row intro-content__text">
                         <h3>COMING SOON</h3>
                         <h1>Get ready everyone. <br>
                             We are currently <br>
@@ -39,22 +46,30 @@
                     <div class="intro-content-bottom">
                         <div class="intro-content__counter-wrap">
                             <h4>Launching in</h4>
-                            <div class="counter__time days">
-                                <span>데이D</span>
-                            </div>
-                            <div class="counter__time hours">
-                                <span>시간H</span>
-                            </div>
-                            <div class="counter__time minutes">
-                                <span>분M</span>
-                            </div>
-                            <div class="counter__time seconds">
-                                <span>초S</span>
+                            <div class="counter">
+                                <div class="counter__time days">
+                                    <span class="time">326</span>
+                                    <span class="time_eng">D</span>
+                                </div>
+                                <div class="counter__time hours">
+                                    <span class="time">05</span>
+                                    <span class="time_eng">H</span>
+                                </div>
+                                <div class="counter__time minutes">
+                                    <span class="time">03</span>
+                                    <span class="time_eng">M</span>
+                                </div>
+                                <div class="counter__time seconds">
+                                    <span class="time">19</span>
+                                    <span class="time_eng">S</span>
+                                </div>
                             </div>
                         </div>
-
                         <div class="intro-content__notify">
-                            <button class="btn--stroke">NOTIFY ME</button>
+                            <a class="btn--stroke slide">
+                                NOTIFY ME
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -62,328 +77,370 @@
         </section>
 
 
-        <section class="s-info">
-            <div class="info-content">
-                <div class="column">
-                    <!-- <nav class="tab-nav">
-                        <ul class="tab-nav__list">
-                            <li class="active">
-                                <a href="#0">
-                                    <span>About</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0" id="tab-service">
-                                    <span>Services</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0" id="tab-contact">
-                                    <span>Contact</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav> -->
-                    <div class="tab-btn">
-                        <input id="tab1" type="radio" name="tabs" checked>
-                        <label for="tab1">About</label>
+        <section class="second_content">
+            <article class="second_article" style="background-image: url(../images/bg-info.jpg);">
+                <section class="s-info">
+                    <div class="info-content">
+                        <div class="column">
+                            <div class="tab-btn">
 
-                        <input id="tab2" type="radio" name="tabs">
-                        <label for="tab2">Services</label>
+                                <input id="tab1" type="radio" name="tabs" checked>
+                                <label for="tab1">About</label>
 
-                        <input id="tab3" type="radio" name="tabs">
-                        <label for="tab3">Contact</label>
+                                <input id="tab2" type="radio" name="tabs">
+                                <label for="tab2" style="margin-left: -4px;">Services</label>
+
+                                <input id="tab3" type="radio" name="tabs">
+                                <label for="tab3">Contact</label>
 
 
-
-                        <section id="content1" class="tab-menu">
-                            <div class="tab-content">
-                                <div id="tab-about" class="tab-content__item">
-                                    <div class="tab-content__item-header">
-                                        <div class="coulumn">
-                                            <h1>
-                                                Hello. We are Imminent.
-                                            </h1>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="column">
-                                            <p class="lead">
-                                                Quidem molestiae natus ipsa ut nihil molestiae numquam tenetur. Ipsum
-                                                quia
-                                                sit
-                                                vitae ipsam et temporibus est. Consequatur recusandae aut aut. Aut esse
-                                                sed
-                                                sint. Sit ipsa velit possimus est. Atque doloribus dicta sit beatae
-                                                necessitatibus.
-                                            </p>
-                                            <p>
-                                                Tempora debitis perspiciatis eum. Repudiandae et aperiam quos
-                                                exercitationem
-                                                enim voluptatem quam sequi temporibus. Ratione quis nihil voluptatem
-                                                placeat
-                                                nemo. Quibusdam delectus magni quas et architecto et repellat a nam.
-                                                Quasi
-                                                et
-                                                voluptates libero sed vel quos in nisi. Error et quis. Impedit autem
-                                                porro
-                                                facilis. Aut voluptate asperiores nostrum eveniet magnam et consequatur
-                                                ab
-                                                accusamus. Consequatur quod ut omnis eum dicta mollitia dignissimos.
-                                            </p>
-
-                                            <div class="row">
-                                                <div class="row-detail">
-                                                    <h4>More About Us.</h4>
-                                                    <p>
-                                                        Sed consequatur quia delectus praesentium. Ut unde velit maiores
-                                                        aut
-                                                        sint quia molestiae accusamus. Nihil et quidem qui natus ut et.
-                                                        Autem
-                                                        error architecto. Pariatur ex repellendus. Occaecati
-                                                        voluptatibus
-                                                        dolorem magni molestiae dolore voluptas occaecati asperiores
-                                                        nemo.
-                                                        Est
-                                                        fugiat fuga nesciunt ducimus quaerat et placeat natus.
-                                                    </p>
+                                <div class="bottom_content">
+                                    <section id="content1" class="tab-menu">
+                                        <div class="tab-content">
+                                            <div id="tab-about" class="tab-content__item">
+                                                <div class="tab-content__item-header">
+                                                    <div class="coulumn">
+                                                        <h1>
+                                                            Hello. We are Imminent.
+                                                        </h1>
+                                                    </div>
                                                 </div>
 
-                                                <div class="row-detail">
-                                                    <h4>Need Web Hosting</h4>
-                                                    <p>
-                                                        Need a great reliable web hosting? We highly recommend <span
-                                                            class="text">DreamHost</span>.
-                                                        Powerful web and Wordpress hosting. Guaranteed. Starting at
-                                                        $2.95
-                                                        per
-                                                        month.
-                                                    </p>
-                                                    <div>
-                                                        <button class="btn--click">GET STARTED NOW</button>
+                                                <div class="row">
+                                                    <div class="column">
+                                                        <p class="lead">
+                                                            Quidem molestiae natus ipsa ut nihil molestiae numquam
+                                                            tenetur.
+                                                            Ipsum
+                                                            quia
+                                                            sit
+                                                            vitae ipsam et temporibus est. Consequatur recusandae aut
+                                                            aut.
+                                                            Aut
+                                                            esse
+                                                            sed
+                                                            sint. Sit ipsa velit possimus est. Atque doloribus dicta sit
+                                                            beatae
+                                                            necessitatibus.
+                                                        </p>
+                                                        <p>
+                                                            Tempora debitis perspiciatis eum. Repudiandae et aperiam
+                                                            quos
+                                                            exercitationem
+                                                            enim voluptatem quam sequi temporibus. Ratione quis nihil
+                                                            voluptatem
+                                                            placeat
+                                                            nemo. Quibusdam delectus magni quas et architecto etrepellat
+                                                            a
+                                                            nam.
+                                                            Quasi
+                                                            et
+                                                            voluptates libero sed vel quos in nisi. Error et quis.
+                                                            Impedit
+                                                            autem
+                                                            porro
+                                                            facilis. Aut voluptate asperiores nostrum eveniet magnam et
+                                                            consequatur
+                                                            ab
+                                                            accusamus. Consequatur quod ut omnis eum dicta mollitia
+                                                            dignissimos.
+                                                        </p>
+
+                                                        <div class="row-content">
+                                                            <div class="row-detail">
+                                                                <h4>More About Us.</h4>
+                                                                <p>
+                                                                    Sed consequatur quia delectus praesentium. Ut unde
+                                                                    velit
+                                                                    maiores
+                                                                    aut
+                                                                    sint quia molestiae accusamus. Nihil et quidem qui
+                                                                    natus
+                                                                    ut
+                                                                    et.
+                                                                    Autem
+                                                                    error architecto. Pariatur ex repellendus. Occaecati
+                                                                    voluptatibus
+                                                                    dolorem magni molestiae dolore voluptas occaecati
+                                                                    asperiores
+                                                                    nemo.
+                                                                    Estfugiat fuga nesciunt ducimus quaerat et placeat
+                                                                    natus.
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="row-detail">
+                                                                <h4>Need Web Hosting</h4>
+                                                                <p>
+                                                                    Need a great reliable web hosting? We highly
+                                                                    recommend
+                                                                    <span class="text">DreamHost</span>.
+                                                                    Powerful web and Wordpress hosting. Guaranteed.
+                                                                    Starting
+                                                                    at
+                                                                    $2.95
+                                                                    per
+                                                                    month.
+                                                                </p>
+
+                                                                <a class="btn__click">
+                                                                    <p class="btn-content">GET STARTED NOW</p>
+                                                                </a>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                        </section>
+                                        <footer>
+                                            <div class="s-copyright">
+                                                <span>© Copyright Imminent 2019</span>
+                                                <span>Design by
+                                                    <a href="https://www.styleshout.com/">StyleShout</a>
+                                                </span>
+                                            </div>
+                                        </footer>
+                                    </section>
 
-                        <!-- tab-service -->
-                        <section id="content2" class="tab-menu">
-                            <div id="tab-service" class="tab-content__item">
-                                <div class="tab-content__item-header">
-                                    <div class="coulumn">
-                                        <h1>
-                                            What we do.
-                                        </h1>
-                                    </div>
-                                </div>
+                                    <!-- tab-service -->
+                                    <section id="content2" class="tab-menu">
+                                        <div id="tab-service" class="tab-content__item">
+                                            <div class="tab-content__item-header">
+                                                <div class="coulumn">
+                                                    <h1>
+                                                        What we do.
+                                                    </h1>
+                                                </div>
+                                            </div>
 
-                                <div class="row">
-                                    <div class="column">
-                                        <p class="lead">
-                                            Iusto et nesciunt eum enim. Eius aut reprehenderit reprehenderit quia at
-                                            architecto. Nemo autem officiis occaecati sit ratione aspernatur quo
-                                            qui.
-                                            Blanditiis autem doloribus similique doloremque sequi.
-                                        </p>
-                                    </div>
-                                </div>
+                                            <div class="row">
+                                                <div class="column">
+                                                    <p class="lead">
+                                                        Iusto et nesciunt eum enim. Eius aut reprehenderit reprehenderit
+                                                        quia at
+                                                        architecto. Nemo autem officiis occaecati sit ratione aspernatur
+                                                        quo
+                                                        qui.
+                                                        Blanditiis autem doloribus similique doloremque sequi.
+                                                    </p>
+                                                </div>
+                                            </div>
 
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                Brand Identity
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            Brand Identity
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur
+                                                            sit
+                                                            vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            Illustration
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur
+                                                            sit
+                                                            vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            Web Design
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur sit vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            Product Strategy
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur
+                                                            sit
+                                                            vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            UI/UX Design
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur
+                                                            sit
+                                                            vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="serivces-list">
+                                                <div class="services-list__item">
+                                                    <div class="service-list__item-content">
+                                                        <h4 class="item-title">
+                                                            Mobile Design
+                                                        </h4>
+                                                        <p>
+                                                            Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat
+                                                            consequatur
+                                                            sit
+                                                            vel
+                                                            illum vel et a delectus. Vel sequi vitae voluptatem
+                                                            perspiciatis
+                                                            eligendi.
+                                                            Voluptatibus optio natus asperiores est commodi amet quia
+                                                            architecto.
+                                                            Dolores necessitatibus et.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
+                                        <footer>
+                                            <div class="s-copyright">
+                                                <span>© Copyright Imminent 2019</span>
+                                                <span>Design by
+                                                    <a href="https://www.styleshout.com/">StyleShout</a>
+                                                </span>
+                                            </div>
+                                        </footer>
+                                    </section>
 
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                Illustration
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <!-- tab-contact -->
+                                    <section id="content3" class="tab-menu">
+                                        <div id="tab-contact" class="tab-content__item">
+                                            <div class="tab-content__item-header">
+                                                <div class="coulumn">
+                                                    <h1>
+                                                        Get In Touch With Us.
+                                                    </h1>
+                                                </div>
+                                            </div>
 
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                Web Design
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                Product Strategy
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                UI/UX Design
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="serivces-list">
-                                    <div class="services-list__item">
-                                        <div class="service-list__item-content">
-                                            <h4 class="item-title">
-                                                Mobile Design
-                                            </h4>
-                                            <p>
-                                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
-                                                sit
-                                                vel
-                                                illum vel et a delectus. Vel sequi vitae voluptatem perspiciatis
-                                                eligendi.
-                                                Voluptatibus optio natus asperiores est commodi amet quia
-                                                architecto.
-                                                Dolores necessitatibus et.
-                                            </p>
-                                        </div>
-                                    </div>
+                                            <div class="row">
+                                                <div class="column">
+                                                    <p class="lead">
+                                                        Iusto et nesciunt eum enim. Eius aut reprehenderit reprehenderit
+                                                        quia at
+                                                        architecto. Nemo autem officiis occaecati sit ratione aspernatur
+                                                        quo
+                                                        qui.
+                                                        Blanditiis autem doloribus similique doloremque sequi.
+                                                    </p>
+                                                    <div class="row">
+                                                        <div class="latge-six">
+                                                            <h4>
+                                                                Where to Find Us
+                                                            </h4>
+                                                            <p>
+                                                                1600 Amphitheatre Parkway <br>
+                                                                Mountain View, CA <br>
+                                                                94043 US<br>
+                                                            </p>
+                                                        </div>
+                                                        <div class="latge-six">
+                                                            <h4>Follow Us</h4>
+                                                            <ul class="link-list">
+                                                                <li>
+                                                                    <a href="#0">Facebook</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#0">Twitter</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#0">Instagram</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <p class="tab-content__item-bottom">
+                                                        <a href="">ddidce@gmail.com</a>
+                                                    </p>
+                                                    <span class="contact-number">
+                                                        <a>+010 1234 5678</a>
+                                                        <a>+010 9876 4321</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <footer>
+                                                <div class="s-copyright">
+                                                    <span>© Copyright Imminent 2019</span>
+                                                    <span>Design by
+                                                        <a href="https://www.styleshout.com/">StyleShout</a>
+                                                    </span>
+                                                </div>
+                                            </footer>
+                                    </section>
                                 </div>
                             </div>
-                        </section>
+                        </div>
 
-                        <!-- tab-contact -->
-                        <section id="content3" class="tab-menu">
-                            <div id="tab-contact" class="tab-content__item">
-                                <div class="tab-content__item-header">
-                                    <div class="coulumn">
-                                        <h1>
-                                            Get In Touch With Us.
-                                        </h1>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <p class="lead">
-                                            Iusto et nesciunt eum enim. Eius aut reprehenderit reprehenderit quia at
-                                            architecto. Nemo autem officiis occaecati sit ratione aspernatur quo
-                                            qui.
-                                            Blanditiis autem doloribus similique doloremque sequi.
-                                        </p>
-                                        <div class="row">
-                                            <div class="latge-six">
-                                                <h4>
-                                                    Where to Find Us
-                                                </h4>
-                                                <p>
-                                                    1600 Amphitheatre Parkway<br>
-                                                    Mountain View, CA<br>
-                                                    94043 US<br>
-                                                </p>
-                                            </div>
-                                            <div class="latge-six">
-                                                <h4>Follow Us</h4>
-                                                <ul class="link-list">
-                                                    <li>
-                                                        <a href="#0">Facebook</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#0">Twitter</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#0">Instagram</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <p class="tab-content__item-bottom">
-                                            ddidce@gmail.com
-                                            <span class="contact-number">
-                                                <p>010 1234 5678</p>
-                                                <p>010 9876 4321</p>
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-                        </section>
                     </div>
-                </div>
-            </div>
-            </div>
+                </section>
+            </article>
         </section>
     </main>
-
-    <footer>
-        <div class="s-copyright">
-            <span>@ Copyright Imminent</span>
-            <span>Design by
-                <a href="https://www.styleshout.com/">StyleShout</a>
-            </span>
-        </div>
-    </footer>
 </body>
 
 </html>
