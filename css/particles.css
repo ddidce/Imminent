@@ -3,6 +3,8 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .intro-static {
@@ -179,7 +181,7 @@ html {
     border-radius: 5px;
     letter-spacing: 5px;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
@@ -307,4 +309,52 @@ body {
     font-weight: 400;
     margin: 0 .6rem 0 1rem;
     color: #646464;
+}
+
+@media all and (min-width:769px) and (max-width: 1200px) {
+    .intro-static {
+        max-width: 100%;
+    }
+
+    .intro-content__text h1 {
+        font-size: 40px;
+        font-family: "DM Serif Display", serif;
+    }
+
+    .time {
+        font-size: 20px;
+    }
+
+    .time_eng {
+        font-size: 15px;
+    }
+
+    .intro-content-bottom {
+        margin: 0 auto;
+    }
+
+    .intro-content__notify {
+        right: 40%;
+    }
+
+    .intro-content__notify>a {
+        padding: 15px 25px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .intro-content__text h1 {
+        font-size: 30px;
+    }
+
+    .intro-content__counter-wrap {
+        display: none;
+    }
+
+    .intro-content__notify {
+        position: relative;
+        left: -35%;
+        top: 0;
+        margin: 0 auto;
+    }
 }

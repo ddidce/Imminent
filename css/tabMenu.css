@@ -1,164 +1,290 @@
-.second_article {
-    position: relative;
-}
-
-.s-info {
-    top: 162px;
-    left: 272px;
-}
-
-.tab-menu {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid none;
-}
-
-input {
-    display: none;
-    font-size: 0px;
-}
-
-label {
-    display: inline-block;
-    margin: 0 0 -1px;
-    padding: 15px 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #bbb;
-    border: 1px solid transparent;
-    border-bottom: 1px solid #efefef;
-}
-
-input {
-    position: absolute;
-    margin-right: -4px;
-}
-
-label:hover {
-    color: #000;
-    cursor: pointer;
-}
-
-input:checked+label {
-    color: #555;
-    border: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #efefef;
-    margin-right: -4px;
-}
-
-#tab1:checked~div>#content1,
-#tab2:checked~div>#content2,
-#tab3:checked~div>#content3 {
-    display: block;
+body,
+html {
+  /*가로 스크롤바 없애는 기능*/
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .second_content {
-    position: relative;
-    top: 162px;
-    left: 270px;
-    box-sizing: border-box;
-    padding: 80px 0;
+  position: relative;
+  /* top: 162px; */
+  left: 270px;
+  box-sizing: border-box;
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 89%;
+}
+
+.second_article {
+  position: relative;
+}
+
+.s-info {
+  top: 162px;
+  left: 272px;
+}
+
+.tab-menu {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid none;
+}
+
+input {
+  display: none;
+  font-size: 0px;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #efefef;
+}
+
+input {
+  position: absolute;
+  margin-right: -4px;
+}
+
+label:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+/* 텝 메뉴들 CSS작업*/
+input:checked+label {
+  color: #555;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #efefef;
+  margin-right: -4px;
+}
+
+/* 체크부분을 바꾸기위해서 사용 */
+#tab1:checked~div>#content1,
+#tab2:checked~div>#content2,
+#tab3:checked~div>#content3 {
+  display: block;
 }
 
 .s-copyright {
-    margin-top: 55px;
+  margin-top: 55px;
 }
 
 .s-copyright>span>a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .bottom_content h1 {
-    font-size: 30px;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    position: relative;
+  font-size: 30px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  position: relative;
 }
 
 .column {
-    width: 820px;
+  width: 820px;
 }
 
 .bottom_content .lead {
-    box-sizing: border-box;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 1.846;
-    margin-bottom: 3.6rem;
-    color: #000000;
-    width: 771px;
+  box-sizing: border-box;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.846;
+  margin-bottom: 3.6rem;
+  color: #000000;
+  width: 771px;
 }
 
 .bottom_content p {
-    box-sizing: border-box;
-    display: block;
-    font-size: 15px;
-    line-height: 32px;
-    width: 680px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 15px;
+  line-height: 32px;
+  width: 680px;
 }
 
 .text {
-    color: #8dc63f;
+  color: #8dc63f;
 }
 
 .bottom_content .row-detail {
-    position: relative;
-    display: inline-block;
-    margin: 0 15px;
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .bottom_content .row-detail p {
-    width: 360px;
+  width: 360px;
 }
 
 .bottom_content .row-detail:nth-child(2) {
-    position: relative;
-    bottom: 40px;
+  position: relative;
+  bottom: 40px;
 }
 
 .tab-content__item-header>.coulumn>h1::after {
-    content: "";
-    display: block;
-    width: 73px;
-    height: 1px;
-    background-color: #8dc63f;
-    top: 10px;
-    right: calc(100% + 2.8rem);
-    text-align: center;
-    margin-top: 45px;
+  content: "";
+  display: block;
+  width: 73px;
+  height: 1px;
+  background-color: #8dc63f;
+  top: 10px;
+  right: calc(100% + 2.8rem);
+  /* right 100%에서 추가로 거리를 주기위함*/
+  text-align: center;
+  margin-top: 45px;
 }
 
 .s-copyright span:nth-child(1)::after {
-    content: "|";
-    display: inline-block;
-    padding: 0 0.8rem 0 1rem;
-    color: rgba(0, 0, 0, 0.3);
+  content: "|";
+  /* | 추가하기 위해서 사용*/
+  display: inline-block;
+  padding: 0 0.8rem 0 1rem;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .s-copyright>span>a {
-    color: #8dc63f;
+  color: #8dc63f;
 }
 
-
 .btn-content {
-    display: inline-block;
-    height: 50px;
-    font-size: 11px;
-    letter-spacing: 5px;
-    border: 1.5px solid #000;
-    border-radius: 4px;
-    text-align: center;
-    width: 100%;
-    font-family: "Gothic A1", sans-serif;
-    font-weight: 400;
-    padding-top: 10px;
+  display: inline-block;
+  height: 50px;
+  font-size: 11px;
+  letter-spacing: 5px;
+  border: 1.5px solid #000;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  padding-top: 10px;
 }
 
 .btn-content:hover {
+  background-color: #fff;
+  /* color: #000; */
+  transition: all 0.2s ease-in;
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+
+  /* About CSS */
+  .bottom_content p.lead {
+    width: 550px;
+  }
+
+  .bottom_content>p {
+    width: 400px;
+  }
+
+  .row-content {
+    display: flex;
+    /* 디스플레이 플렉스해서  가로로 정렬*/
+    flex-direction: column;
+    /* flex-direction: column; 으로 가로 배치된걸 세로배치로 변경 */
+  }
+
+  .row-content .row-detail {
+    position: relative;
+    padding-bottom: 70px;
+  }
+
+  .btn-content:hover {
     background-color: #000;
+    /* 마우스 오버시 투명도 설정 */
+    opacity: 0.1;
     color: #fff;
-    transition: all 0.2s ease-in;
+  }
+
+  .s-copyright {
+    margin-top: 0;
+  }
+
+  /* Services CSS */
+
+  .serivces-list {
+    display: block;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .column {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(-10%);
+  }
+
+  .row.intro-content__text {
+    position: relative;
+    left: -31%;
+    /* top: 0; */
+  }
+
+  .bottom_content .lead {
+    position: relative;
+    width: 450px;
+    left: 10%;
+  }
+
+  .bottom_content p {
+    position: relative;
+    width: 450px;
+    left: 10%;
+  }
+
+  .row-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-detail>h4 {
+    position: relative;
+    text-align: center;
+    left: -20%;
+    margin-top: 80px;
+  }
+
+  /* Service part */
+  .serivces-list {
+    display: block;
+  }
+
+  /* Contact */
+  .row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0%;
+  }
+
+  .latge-six {
+    position: relative;
+    left: -15%;
+  }
+
+  .latge-six>p {
+    left: 0;
+  }
+
+  .column .tab-content__item-bottom {
+    font-size: 30px;
+  }
+
+  .contact-number {
+    position: relative;
+    left: 80px;
+  }
 }
